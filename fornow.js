@@ -15,10 +15,13 @@ function getComputerChoice (){
     
     return result;
 
+
 }
 
-console.log (getComputerChoice());
+
 let computerSelection = getComputerChoice();
+
+console.log (computerSelection);
 
 let playerChoice = prompt("Rock, Paper, Scissors,,,Shoot!", "Type Rock, Paper, or Scissors").toLowerCase();
 
