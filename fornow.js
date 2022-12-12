@@ -82,3 +82,5 @@ function game (){
 }
 
 game ();
+
+/*prompt message seems to send the same result "Draw. Try again!!" no matter what*/
