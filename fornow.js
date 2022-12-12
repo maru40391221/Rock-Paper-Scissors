@@ -2,6 +2,9 @@
 function getComputerChoice (){
     let numbers= Math.random() * 10;
 
+    console.log (numbers);
+
+    function computerResult (){ 
     if (4 > numbers && numbers > 0){
         result = "paper";
 
@@ -13,10 +16,14 @@ function getComputerChoice (){
     }
     
     return result;
+    }
+
+    console.log (`computer chose ${computerResult()}`);;
+    
 }
 
 let computerSelection = getComputerChoice();
-console.log (computerSelection);
+
 
 function playRound (){
     let playerChoice = prompt("Rock, Paper, Scissors,,,Shoot!", "Type Rock, Paper, or Scissors").toLowerCase();
@@ -49,12 +56,28 @@ function playRound (){
 function game (){
     for (let i = 0; i < 5; i++) {
         if (i===0){
-            console.log ("please"))
-            playRound()
-            
+            console.log ("round 1" );
+            playRound();
+        } else if (i===1){
+            console.log ("round 2");
+            getComputerChoice();
+            playRound();
+        } else if (i===2){
+            console.log ("round 3");
+            getComputerChoice();
+            playRound();
+        } else if (i===3){
+            console.log ("round 4");
+            getComputerChoice();
+            playRound();
+        }else if (i===4){
+            console.log ("round 5");
+            getComputerChoice();
+            playRound();
         }
-
-
+        else {
+            console.log ("done")
+        }
      }
 }
 
