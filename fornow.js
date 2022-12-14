@@ -1,5 +1,5 @@
 
-function getComputerChoice (){
+function round (){
     let numbers= Math.random() * 10;
 
     console.log (numbers);
@@ -18,14 +18,10 @@ function getComputerChoice (){
     return result;
     }
 
-    console.log (`computer chose ${computerResult()}`);;
-    
-}
+    console.log (`computer chose ${computerResult()}`);
 
-let computerSelection = getComputerChoice();
+    let computerSelection = computerResult ();
 
-
-function playRound (){
     let playerChoice = prompt("Rock, Paper, Scissors,,,Shoot!", "Type Rock, Paper, or Scissors").toLowerCase();
         console.log (playerChoice);
 
@@ -50,37 +46,30 @@ function playRound (){
     else {
         alert ("Draw. Try again!!");
     }
+    
 }
 
-
 function game (){
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i <= 5; i++) {
         if (i===0){
             console.log ("round 1" );
-            playRound();
+            round();
         } else if (i===1){
             console.log ("round 2");
-            getComputerChoice();
-            playRound();
+            round();
         } else if (i===2){
             console.log ("round 3");
-            getComputerChoice();
-            playRound();
+            round();
         } else if (i===3){
             console.log ("round 4");
-            getComputerChoice();
-            playRound();
+            round();
         }else if (i===4){
             console.log ("round 5");
-            getComputerChoice();
-            playRound();
-        }
-        else {
+            round();
+        }else if (i===5){
             console.log ("done")
         }
      }
 }
 
 game ();
-
-/*prompt message seems to send the same result "Draw. Try again!!" no matter what*/
