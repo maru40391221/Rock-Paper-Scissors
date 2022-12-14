@@ -74,4 +74,4 @@ function game (){
 
 game ();
 
-/* add a functionality to keep score */
+/* add a functionality to keep score tomorrow*/
